@@ -1,0 +1,1 @@
+{"name":"记账本 - 上班族支出管理","short_name":"记账本","description":"管理你的每一笔支出，区分工作日和节假日消费","start_url":"/","display":"standalone","background_color":"#f8f6f3","theme_color":"#f0a030","lang":"en","scope":"/","orientation":"portrait","icons":[{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any"},{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"maskable"}]}

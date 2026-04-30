@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* 明亮白色基底 */
+  --bg-primary: #f8f6f3;
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #f0eeeb;
+  --bg-elevated: #e8e6e3;
+  --bg-card: #ffffff;
+
+  /* 文字 */
+  --text-primary: #1a1a2e;
+  --text-secondary: #5a5a72;
+  --text-muted: #9e9eb0;
+  --text-inverse: #ffffff;
+
+  /* 活力橙金主色 */
+  --accent: #f0a030;
+  --accent-hover: #e09020;
+  --accent-glow: rgba(240, 160, 48, 0.2);
+  --accent-dim: rgba(240, 160, 48, 0.08);
+
+  /* 功能色 */
+  --green: #22a060;
+  --green-light: rgba(34, 160, 96, 0.08);
+  --danger: #e04040;
+  --danger-light: rgba(224, 64, 64, 0.08);
+
+  /* 分类色 */
+  --cat-takeout: #22a060;
+  --cat-dining: #4080c0;
+  --cat-grocery: #e0a020;
+  --cat-telecom: #8060c0;
+  --cat-credit: #e04040;
+  --cat-study: #20a0a0;
+  --cat-fun: #e07030;
+
+  /* 圆角 */
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+
+  /* 阴影 */
+  --shadow-sm: 0 1px 4px rgba(26, 26, 46, 0.05);
+  --shadow-md: 0 4px 16px rgba(26, 26, 46, 0.07);
+  --shadow-lg: 0 8px 24px rgba(26, 26, 46, 0.1);
+  --shadow-float: 0 6px 20px rgba(240, 160, 48, 0.25);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Noto Sans SC', -apple-system, 'PingFang SC', 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+#app {
+  max-width: 480px;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background: var(--bg-primary);
+}
+
+input, button, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: brightness(0.5);
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.92); }
+  to { opacity: 1; transform: scale(1); }
+}
