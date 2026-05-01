@@ -20,5 +20,10 @@
   },
   "devDependencies": {
     "vite-plugin-pwa": "^1.2.0"
+  },
+  "overrides": {
+    "vite-plugin-pwa": {
+      "vite": "$vite"
+    }
   }
 }
